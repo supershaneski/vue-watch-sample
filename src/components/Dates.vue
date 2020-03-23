@@ -13,8 +13,6 @@ export default {
     computed: {
         showValue: function() {
             
-            const flag = false;
-
             const monthName = [
                 "January",
                 "February",
@@ -29,7 +27,7 @@ export default {
                 "November",
                 "December"
             ]
-            const month = (flag)?monthName[this.data[1]]:"Month";
+            const month = monthName[this.data[1]];
             
             return [month, this.data[2]].join(' ')
         }

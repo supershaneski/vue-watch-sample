@@ -31,9 +31,5 @@ export default {
     text-transform: uppercase;
     line-height: 100%;
     letter-spacing: 0px;
-    /*
-    font-family: arial;
-    font-size: 2.1em;
-    */
 }
 </style>

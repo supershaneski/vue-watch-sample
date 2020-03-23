@@ -30,7 +30,6 @@ export default {
     data () {
         return {
             timer: null,
-            time: "00:00:00",
             valueDates: [0, 0],
             valueDay: 0,
             valueHour: 0,
@@ -38,19 +37,9 @@ export default {
             valueSeconds: 0
         }
     },
-    methods: {
-        procTime: (date) => {
-            const hours = date.getHours();
-            const minutes = date.getMinutes();
-            const seconds = date.getSeconds();
-            return [hours, minutes, seconds].join(':');
-        }
-    },
     beforeMount() {
         this.timer = setInterval(() => {
-            //this.time = new Date()
-            this.time = this.procTime(new Date())
-
+            
             const date = new Date();
             this.valueHour = date.getHours();
             this.valueMinute = date.getMinutes();

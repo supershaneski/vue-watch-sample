@@ -1,4 +1,13 @@
-# hello-world
+vue-watch-sample
+================
+
+This project was bootstrapped with [Vue CLI](https://cli.vuejs.org/).
+
+## Objective / Description
+This is my first project using [Vue.Js](https://vuejs.org/).
+The main objective is to familiarize myself with Vue.JS.
+
+It is just a simple watch/clock application.
 
 ## Project setup
 ```

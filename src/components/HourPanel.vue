@@ -1,19 +1,20 @@
 <template>
     <div class="hour-container">
-        <div class="hour-content">{{ showValue }}</div>
+        <div class="hour-content">{{ $_Hour_showValue }}</div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Hour',
+    name: 'HourPanel',
     props: {
         data: Number,
     },
     computed: {
-        showValue: function() {
-            const date = (this.data + 1) % 13;
-            return (date < 10)?'0'+date:date;
+        $_Hour_showValue: function() {
+            let hour = this.data % 12;
+            hour = (hour === 0)?12:hour; 
+            return (hour < 10)?'0'+hour:hour;
         }
     }
 }

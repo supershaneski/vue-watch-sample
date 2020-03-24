@@ -1,7 +1,7 @@
 <template>
     <div class="day-container">
         <div class="day-content">
-            {{ showDay }}
+            {{ $_Day_showDay }}
         </div>
     </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
     name: 'Day',
     computed: {
-        showDay: function() {
+        $_Day_showDay: function() {
             const nameDay = [
                 "Sunday",
                 "Monday",
@@ -19,7 +19,7 @@ export default {
                 "Thursday",
                 "Friday"
             ]
-            return nameDay[1]
+            return nameDay[this.data]
         }
     },
     props: {

@@ -1,31 +1,31 @@
 <template>
     <div class="watch">
-        <div class="day"><Day v-bind:data="valueDay" /></div>
-        <div class="date"><Dates v-bind:data="valueDates" /></div>
-        <div class="hours"><Hour v-bind:data="valueHour" /></div>
-        <div class="minutes"><Minute v-bind:data="valueMinute" /></div>
-        <div class="ampm"><AmPm v-bind:data="valueHour" /></div>
-        <div class="seconds"><Seconds v-bind:data="valueSeconds" /></div>        
+        <div class="day"><DayPanel v-bind:data="valueDay" /></div>
+        <div class="date"><DatesPanel v-bind:data="valueDates" /></div>
+        <div class="hours"><HourPanel v-bind:data="valueHour" /></div>
+        <div class="minutes"><MinutePanel v-bind:data="valueMinute" /></div>
+        <div class="ampm"><AmPmPanel v-bind:data="valueHour" /></div>
+        <div class="seconds"><SecondsPanel v-bind:data="valueSeconds" /></div>        
     </div>
 </template>
 
 <script>
-import AmPm from './AmPm.vue';
-import Dates from './Dates.vue';
-import Day from './Day.vue';
-import Hour from './Hour.vue';
-import Minute from './Minute.vue';
-import Seconds from './Seconds.vue';
+import AmPmPanel from './AmPmPanel.vue';
+import DatesPanel from './DatesPanel.vue';
+import DayPanel from './DayPanel.vue';
+import HourPanel from './HourPanel.vue';
+import MinutePanel from './MinutePanel.vue';
+import SecondsPanel from './SecondsPanel.vue';
 
 export default {
-    name: 'Watch',
+    name: 'MyWatch',
     components: {
-        AmPm,
-        Dates,
-        Day,
-        Hour,
-        Minute,
-        Seconds
+        AmPmPanel,
+        DatesPanel,
+        DayPanel,
+        HourPanel,
+        MinutePanel,
+        SecondsPanel
     },
     data () {
         return {

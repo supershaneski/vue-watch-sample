@@ -1,17 +1,17 @@
 <template>
     <div class="ampm-container">
-        <div class="ampm-content">{{ showValue }}</div>
+        <div class="ampm-content">{{ $_AmPm_showValue }}</div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'AmPm',
+    name: 'AmPmPanel',
     props: {
         data: Number,
     },
     computed: {
-        showValue: function() {
+        $_AmPm_showValue: function() {
             return (this.data >= 12)?'pm':'am';
         }
     }

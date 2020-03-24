@@ -1,17 +1,17 @@
 <template>
     <div class="dates-container">
-        <div class="dates-content">{{ showValue }}</div>
+        <div class="dates-content">{{ $_Dates_showValue }}</div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Dates',
+    name: 'DatesPanel',
     props: {
         data: Array,
     },
     computed: {
-        showValue: function() {
+        $_Dates_showValue: function() {
             
             const monthName = [
                 "January",

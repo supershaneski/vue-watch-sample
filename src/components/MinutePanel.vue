@@ -1,17 +1,17 @@
 <template>
-    <div class="seconds-container">
-        <div class="seconds-content">{{ showValue }}</div>
+    <div class="minute-container">
+        <div class="minute-content">{{ $_Minute_showValue }}</div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Seconds',
+    name: 'Minute',
     props: {
         data: Number,
     },
     computed: {
-        showValue: function() {
+        $_Minute_showValue: function() {
             return (this.data < 10)?'0'+this.data:this.data;
         }
     }
@@ -19,10 +19,11 @@ export default {
 </script>
 
 <style scoped>
-.seconds-container {
+.minute-container {
     background-color: transparent;
 }
-.seconds-content {
+.minute-content {
+    background-color: transparent;
     text-align: center;
     padding-top: 14px;
     font-family: 'Arial Black';
@@ -31,5 +32,6 @@ export default {
     text-transform: uppercase;
     line-height: 100%;
     letter-spacing: 0px;
+    color: #000;
 }
 </style>

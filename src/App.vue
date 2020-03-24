@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Watch />
+    <MyWatch />
   </div>
 </template>
 
 <script>
-import Watch from './components/Watch.vue'
+import MyWatch from './components/MyWatch.vue'
 
 export default {
   name: 'App',
   components: {
-    Watch,
+    MyWatch,
   }
 }
 </script>
